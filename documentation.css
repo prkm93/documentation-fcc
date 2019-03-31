@@ -1,0 +1,60 @@
+*{
+    font-family: cursive;
+    box-sizing: border-box;
+    color: rgb(59, 56, 56); 
+}
+body{
+    display: flex;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Navigation Section */
+.navbar-side{
+    float: left;
+    position: fixed;
+}
+.navbar-side li{
+    display: grid;
+    grid-column-gap: 1px;
+    list-style-type: none;
+    border-bottom: none;
+    padding: 10px;
+    position: relative;
+}
+.navbar-side a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#navbar{
+    width: 100%;
+    border-right: solid;
+    flex:1;
+}
+
+/* Code Section*/
+.code{
+    width: 100%;
+    height: 90%;
+    background-color:rgb(228, 227, 227);
+    border-radius: 2em;
+    padding:1em;
+}
+code{
+    font-family:Inconsolata;
+}
+
+/* Main Documentation**/
+
+#main-doc{
+    margin-left: 20px;
+    flex:3;
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        display: flex;
+        flex-wrap: column nowrap;
+    }
+}
